@@ -1,0 +1,137 @@
+ul{
+    list-style: none;
+    margin: 0px 20px 0px 20px;
+  }
+  
+  li{
+    margin: 30px 10px 30px 10px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  li::before{
+    content: "";
+    width: 25px;
+    aspect-ratio: 1;
+    background-color: transparent;
+    position: absolute;
+    left: -40px;
+    bottom: -2px;
+    border-radius: 50%;
+    border: 2px solid hsl(228, 100%, 84%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    font-size: 13px;
+  }
+  
+  li:nth-child(1)::before{
+    content: "1";
+  }
+  
+  li:nth-child(2)::before{
+    content: "2";
+  }
+  
+  li:nth-child(3)::before{
+    content: "3";
+  }
+  
+  li:nth-child(4)::before{
+    content: "4";
+  }
+  
+  li.active::before{
+    background: hsl(228, 100%, 84%);
+    color: black;
+  }
+  
+  li > span{
+    font-weight: 400;
+    color: hsl(228, 100%, 84%);
+    font-size: 12px;
+  }
+  
+  li > p{
+    margin: 0px;
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
+  .sidebar{
+    background: url('../assets/images/bg-sidebar-desktop.svg'), hsl(243, 100%, 62%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 0px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  .main{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    width: 900px;
+    height: 570px;
+    color: hsl(213, 96%, 18%);
+    background: white;
+    border-radius: 10px;
+  }
+
+  
+  .form1 > p{
+    color: hsl(231, 11%, 63%);
+  }
+  
+  /* .form1 button{
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+  } */
+  
+  .form1 input{
+    padding: 10px;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 8px;
+    width: 430px;
+    position: relative;
+    margin-top: 50px;
+    font-family: inherit;
+    color: hsl(213, 96%, 18%);
+    cursor: pointer;
+    transition: all ease-in-out .15s;
+    outline: none;
+  }
+  
+  .form1 input:hover{
+    border: 1px solid hsl(231, 11%, 63%);
+  }
+  
+  .form1 input::placeholder{
+    color: hsl(213, 96%, 18%);
+  }
+  
+  .form1 span{
+    position: absolute;
+    font-weight: 400;
+  }
+  
+  .name{
+    top: 170px;
+    left: 20px;
+  }
+  
+  .mail{
+    top: 258px;
+    left: 20px;
+  }
+  
+  .number{
+    top: 345px;
+    left: 20px;
+  }
+
+  

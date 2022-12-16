@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,700&display=swap');
+
+@import url('../assets/fonts/Ubuntu-Bold.ttf');
+@import url('../assets/fonts/Ubuntu-Medium.ttf');
+@import url('../assets/fonts/Ubuntu-Regular.ttf');
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 27px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: hsl(213, 96%, 18%);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: hsl(213, 96%, 18%);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px hsl(213, 96%, 18%);
+  }
+  
+  input:checked + .slider:before {
+    /* -webkit-transform: translateX(15px);
+    -ms-transform: translateX(15px); */
+    transform: translateX(17px);
+  }
+
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+body{
+    background-color: hsl(217, 100%, 97%);
+    font-family: Ubuntu;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+
+body, html{
+  height: 100%;
+}
+
+.active{
+  display: block !important;
+}
+
+.form1, .form2, .form3, .form4, .form5, .thanks{
+  display: none;
+  padding: 40px 20px 40px 20px;
+  position: relative;
+}
+
+button{
+  background-color: hsl(213, 96%, 18%);
+  color: white;
+  font-family: inherit;
+  border: none;
+  border-radius: 6px;
+  padding: 12.5px 20px 12.5px 20px;
+  font-size: 15px;
+  position: absolute;
+  cursor: pointer;
+  transition: all ease-in-out .15s;
+}
+
+button:hover{
+  background-color: hsl(213, 94%, 25%);
+}
+
+.next-step{
+  bottom: 40px;
+  right: 130px;
+}
+
+.back-step{
+  bottom: 40px;
+  left: 30px;
+}
