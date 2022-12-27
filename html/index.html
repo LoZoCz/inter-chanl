@@ -9,25 +9,25 @@
   <title>Frontend Mentor | Multi-step form</title>
 
   <link rel="stylesheet" href="../styles/global.css">
-  <script src="../js/script.js" defer></script>
+  <script src="https://kit.fontawesome.com/c4587b3804.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="main">
     <div class="sidebar">
       <ul>
-        <li class="active">
+        <li class="sideIcon active">
           <span>Step 1</span>
           <p>Your info</p>
         </li>
-        <li>
+        <li class="sideIcon">
           <span>Step 2</span>
           <p>Select plan</p>
         </li>
-        <li>
+        <li class="sideIcon">
           <span>Step 3</span>
           <p>Add-ons</p>
         </li>
-        <li>
+        <li class="sideIcon">
           <span>Step 4</span>
           <p>Summary</p>
         </li>
@@ -41,7 +41,7 @@
         Please provide your name, email address, and phone number.
       </p>
       <span class="name">Name</span>
-      <input type="text" placeholder="e.g. Stephen King">
+      <input type="text" placeholder="e.g. Stephen King" id="name">
       <span class="mail">Email address</span>
       <input type="text" placeholder="e.g. stephenking@lorem.com">
       <span class="number">Phone number</span>
@@ -56,35 +56,57 @@
         You have the option of monthly or yearly billing.
       </p>
       <div class="plan-cont">
-        <div class="plan">
-          <img src="../assets/images/icon-arcade.svg" alt="">
+        <form>
           <div>
-            <p>Arcade</p>
-            <p>$9/mo</p>
+            <input type="radio" id="1plan" name="drone">
+            <label for="1plan">
+              <div class="plan">
+                  <img src="../assets/images/icon-arcade.svg" alt="">
+                  <div>
+                    <p>Arcade</p>
+                    <p>$9/mo</p>
+                    <p class="yearlyInfo"></p>
+                  </div>
+              </div>
+            </label>
           </div>
-        </div>
-        <div class="plan">
-          <img src="../assets/images/icon-advanced.svg" alt="">
+      
           <div>
-            <p>Advanced</p>
-            <p>$12/mo</p>
+            <input type="radio" id="2plan" name="drone">
+            <label for="2plan">
+              <div class="plan">
+                  <img src="../assets/images/icon-advanced.svg" alt="">
+                  <div>
+                    <p>Advanced</p>
+                    <p>$12/mo</p>
+                    <p class="yearlyInfo"></p>
+                  </div>
+                </div>
+            </label>
           </div>
-        </div>
-        <div class="plan">
-          <img src="../assets/images/icon-pro.svg" alt="">
+      
           <div>
-            <p>Pro</p>
-            <p>$15/mo</p>
+            <input type="radio" id="3plan" name="drone">
+            <label for="3plan">
+              <div class="plan">
+                  <img src="../assets/images/icon-pro.svg" alt="">
+                  <div>
+                    <p>Pro</p>
+                    <p>$15/mo</p>
+                    <p class="yearlyInfo"></p>
+                  </div>
+                </div>
+            </label>
           </div>
-        </div>
+      </form>
       </div>
       <div class="switch-plan">
-        <span>Monthly</span>
-        <label class="switch">
-          <input type="checkbox" id="box" checked>
+        <span class="monthly ymActive">Monthly</span>
+        <label class="switch" for="box">
+          <input type="checkbox" id="box">
           <span class="slider round"></span>
         </label>
-        <span>Yearly</span>
+        <span class="yearly">Yearly</span>
       </div>
       <button class="next-step">Next Step</button>
       <button class="back-step">Go back</button>
@@ -96,32 +118,55 @@
       <p>
         Add-ons help enhance your gaming experience.
       </p>
-      <ul>
-        <li>
-          <input type="checkbox" name="" id="">
-          <div class="check-info">
-            <p>Online service</p>
-            <p>Access to multiplayer games</p>
-          </div>
-          <p>+$1/mo</p>
-        </li>
-        <li>
-          <input type="checkbox" name="" id="">
-          <div class="check-info">
-            <p>Larger storage</p>
-            <p>Extra 1TB of cloud save</p>
-          </div>
-          <p>+$2/mo</p>
-        </li>
-        <li>
-          <input type="checkbox" name="" id="">
-          <div class="check-info">
-            <p>Customizable Profile</p>
-            <p>Custom theme on your profile</p>
-          </div>
-          <p>+$2/mo</p>
-        </li>
-      </ul>
+      <form>
+        <div>
+          <input type="checkbox" id="huey">
+          <label for="huey">
+            <span class="mark"></span>
+            <div class="addOns">
+                <div class="addOns-info">
+                  <div>
+                    <p>Online services</p>
+                    <p>Access to multiplayer games</p>
+                  </div>
+                  <p class="addCosts">+$1/mon</p>
+                </div>
+            </div>
+          </label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="add2">
+          <label for="add2">
+            <span class="mark"></span>
+            <div class="addOns">
+                <div class="addOns-info">
+                  <div>
+                    <p>Large storage</p>
+                    <p>Extra 1TB of cloud save</p>
+                  </div>
+                  <p class="addCosts">+$2/mon</p>
+                </div>
+              </div>
+          </label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="add3">
+          <label for="add3">
+            <span class="mark"></span>
+            <div class="addOns">
+                <div class="addOns-info">
+                  <div>
+                    <p>Customizable profile</p>
+                    <p>Custom theme on your profile</p>
+                  </div>
+                  <p class="addCosts">+$2/mon</p>
+                </div>
+              </div>
+          </label>
+        </div>
+      </form>
       <button class="next-step">Next Step</button>
       <button class="back-step">Go back</button>
     </article>
@@ -164,5 +209,7 @@
       </p>
     </article>
   </div>
+  <script src="../js/script.js"></script>
+  <script src="../js/switch.js"></script>
 </body>
 </html>

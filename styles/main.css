@@ -8,7 +8,13 @@
     position: relative;
     display: inline-block;
     width: 45px;
-    height: 27px;
+    height: 22px;
+  }
+
+  #box{
+    width: 45px;
+    height: 22px;
+    margin: 0px;
   }
   
   .switch input { 
@@ -32,8 +38,8 @@
   .slider:before {
     position: absolute;
     content: "";
-    height: 20px;
-    width: 20px;
+    height: 16px;
+    width: 16px;
     left: 4px;
     bottom: 3px;
     background-color: white;
@@ -52,7 +58,7 @@
   input:checked + .slider:before {
     /* -webkit-transform: translateX(15px);
     -ms-transform: translateX(15px); */
-    transform: translateX(17px);
+    transform: translateX(22px);
   }
 
   .slider.round {
@@ -86,7 +92,7 @@ body, html{
   position: relative;
 }
 
-button{
+.next-step{
   background-color: hsl(213, 96%, 18%);
   color: white;
   font-family: inherit;
@@ -99,7 +105,7 @@ button{
   transition: all ease-in-out .15s;
 }
 
-button:hover{
+.next-step:hover{
   background-color: hsl(213, 94%, 25%);
 }
 
@@ -111,4 +117,18 @@ button:hover{
 .back-step{
   bottom: 40px;
   left: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  cursor: pointer;
+  transition: all ease-in-out .15s;
+  font-size: 15px;
+  color: hsl(231, 11%, 63%);
+  font-family: inherit;
+  padding: 12.5px 20px 12.5px 20px;
+}
+
+.back-step:hover{
+  color: hsl(213, 94%, 25%);
 }

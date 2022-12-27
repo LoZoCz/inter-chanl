@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            display: none;
+        }
+        input:checked + label > div{
+            outline: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+          <input type="checkbox" id="huey" name="drone" value="huey">
+          <label for="huey">
+            <div class="plan">
+                <div>
+                  <p>Arcade</p>
+                  <p>$9/mo</p>
+                  <p class="yearlyInfo"></p>
+                </div>
+            </div>
+          </label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="dewey" name="drone" value="dewey">
+          <label for="dewey">
+            <div class="plan">
+                <div>
+                  <p>Advanced</p>
+                  <p>$12/mo</p>
+                  <p class="yearlyInfo"></p>
+                </div>
+              </div>
+          </label>
+        </div>
+    
+        <div>
+          <input type="checkbox" id="louie" name="drone" value="louie">
+          <label for="louie">
+            <div class="plan">
+                <div>
+                  <p>Pro</p>
+                  <p>$15/mo</p>
+                  <p class="yearlyInfo"></p>
+                </div>
+              </div>
+          </label>
+        </div>
+    </form>
+</body>
+</html>
