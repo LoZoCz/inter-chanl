@@ -43,9 +43,9 @@
       <span class="name">Name</span>
       <input type="text" placeholder="e.g. Stephen King" id="name">
       <span class="mail">Email address</span>
-      <input type="text" placeholder="e.g. stephenking@lorem.com">
+      <input type="text" placeholder="e.g. stephenking@lorem.com" id="mail">
       <span class="number">Phone number</span>
-      <input type="text" placeholder="e.g. +1 234 567 890">
+      <input type="text" placeholder="e.g. +1 234 567 890" id="number">
       <button class="next-step">Next Step</button>
     </article>
     <article class="form2">
@@ -58,7 +58,7 @@
       <div class="plan-cont">
         <form>
           <div>
-            <input type="radio" id="1plan" name="drone">
+            <input type="radio" id="1plan" name="drone" class="planRadio">
             <label for="1plan">
               <div class="plan">
                   <img src="../assets/images/icon-arcade.svg" alt="">
@@ -72,7 +72,7 @@
           </div>
       
           <div>
-            <input type="radio" id="2plan" name="drone">
+            <input type="radio" id="2plan" name="drone" class="planRadio">
             <label for="2plan">
               <div class="plan">
                   <img src="../assets/images/icon-advanced.svg" alt="">
@@ -86,7 +86,7 @@
           </div>
       
           <div>
-            <input type="radio" id="3plan" name="drone">
+            <input type="radio" id="3plan" name="drone" class="planRadio">
             <label for="3plan">
               <div class="plan">
                   <img src="../assets/images/icon-pro.svg" alt="">
@@ -120,8 +120,8 @@
       </p>
       <form>
         <div>
-          <input type="checkbox" id="huey">
-          <label for="huey">
+          <input type="checkbox" id="add1" value="Online services" class="addInp">
+          <label for="add1">
             <span class="mark"></span>
             <div class="addOns">
                 <div class="addOns-info">
@@ -136,7 +136,7 @@
         </div>
     
         <div>
-          <input type="checkbox" id="add2">
+          <input type="checkbox" id="add2" value="Large storage" class="addInp">
           <label for="add2">
             <span class="mark"></span>
             <div class="addOns">
@@ -152,7 +152,7 @@
         </div>
     
         <div>
-          <input type="checkbox" id="add3">
+          <input type="checkbox" id="add3" value="Customizable profile" class="addInp">
           <label for="add3">
             <span class="mark"></span>
             <div class="addOns">
@@ -180,36 +180,46 @@
       <div class="finish">
         <div class="first">
           <div class="f-info">
-            <p></p>
-            <a href=""></a>
+            <p class="whichPlan"><i class="fa-solid fa-arrow-down"></i> Choose plan <i class="fa-solid fa-arrow-down"></i></p>
+            <a class="change">Change</a>
           </div>
-          <p></p>
+          <p class="planCost"></p>
         </div>
         <hr>
         <div class="second">
-          <p></p>
-          <p></p>
-        </div>
-        <div class="third">
-          <p></p>
-          <p></p>
+          <div>
+            <p class="additions"></p>
+            <p class="additionPrice"></p>
+          </div>
+          <div>
+            <p class="additions"></p>
+            <p class="additionPrice"></p>
+          </div>
+          <div>
+            <p class="additions"></p>
+            <p class="additionPrice"></p>
+          </div>
         </div>
       </div>
-      <p></p>
+      <div class="third">
+        <p>Total (per month)</p>
+        <p class="totalCost"></p>
+      </div>
       <button class="next-step">Confirm</button>
       <button class="back-step">Go back</button>
     </article>
     <article class="thanks">
-      <img src="../assets/images/icon-thank-you.svg" alt="">
-      <h1>
-        Thank you!
-      </h1>
-      <p>
-        Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.
-      </p>
+      <div>
+        <img src="../assets/images/icon-thank-you.svg" alt="">
+        <h1>
+          Thank you!
+        </h1>
+        <p>
+          Thanks for confirming your subscription! We hope you have fun using our platform. If you ever need support, please feel free to email us at support@loremgaming.com.
+        </p>
+      </div>
     </article>
   </div>
   <script src="../js/script.js"></script>
-  <script src="../js/switch.js"></script>
 </body>
 </html>

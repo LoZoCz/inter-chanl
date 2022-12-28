@@ -1,0 +1,52 @@
+.change{
+    text-decoration: underline;
+    font-weight: 500;
+    cursor: pointer;
+    color: hsl(231, 11%, 63%);
+}
+
+.whichPlan{
+    margin: 0px 0px 5px 0px;
+}
+
+.whichPlan, .planCost{
+    font-weight: 700;
+}
+
+.first{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.finish{
+    background: hsl(217, 100%, 97%);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-top: 35px;
+}
+
+.form4 hr{
+    height: 0px;
+    border: 0.1px solid hsl(229, 24%, 87%);
+}
+
+.third{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.second > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.additionPrice{
+    text-align: right;
+}
+
+.second p{
+    margin: 10px 0px 10px 0px;
+}
